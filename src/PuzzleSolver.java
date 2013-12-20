@@ -53,7 +53,7 @@ public class PuzzleSolver {
 		LinkedList<String> tempList = new LinkedList<>();
 		String current = "123456780";
 		
-		while (current != soal) {
+		while (current.equals(soal)) {
 			tempList.addFirst(current);
 			current = rekamanParent.get(current);
 		}
